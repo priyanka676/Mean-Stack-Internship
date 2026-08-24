@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Login Page</title>
+    <title>Login Page Validation</title>
 </head>
 <body>
     <section class="vh-100">
@@ -20,7 +19,7 @@
             <div class="col-md-6 col-lg-7 d-flex align-items-center">
               <div class="card-body p-4 p-lg-5 text-black">
 
-                <form>
+                <form id="loginForm">
 
                   <div class="d-flex align-items-center mb-3 pb-1">
                     <i class="icon fas fa-cubes fa-2x me-3"></i>
@@ -30,17 +29,17 @@
                   <h5 class="fw-normal mb-3 pb-3">Sign into your account</h5>
 
                   <div data-mdb-input-init class="form-outline mb-4">
-                    <input type="email" id="form" class="form-control form-control-lg" />
-                    <label class="form-label" for="form2Example17">Email address</label>
+                    <input type="email" id="email emailError" name="email" class="form-control form-control-lg" required />
+                    <label class="form-label error message" for="form">Email address</label>
                   </div>
 
                   <div data-mdb-input-init class="form-outline mb-4">
-                    <input type="password" id="form" class="form-control form-control-lg" />
+                    <input type="password" id="password passwordError" name="password" class="form-control form-control-lg " required />
                     <label class="form-label" for="form">Password</label>
                   </div>
 
                   <div class="pt-1 mb-4">
-                    <button data-mdb-button-init data-mdb-ripple-init class="btn btn-dark btn-lg btn-block" type="button">Login</button>
+                    <button data-mdb-button-init data-mdb-ripple-init class="btn btn-dark btn-lg btn-block" type="submit">Login</button>
                   </div>
 
                   <a class="small text-muted" href="#">Forgot password?</a>
