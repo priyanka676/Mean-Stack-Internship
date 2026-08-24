@@ -1,0 +1,18 @@
+section{
+    background-color: #9A616D;
+}
+.card{
+    border-radius: 1rem;
+}
+.image{
+    border-radius: 1rem 0 0 1rem;
+}
+.icon{
+    color: #ff6219;
+}
+h5{
+    letter-spacing: 1px;
+}
+.text{
+    color: #393f81;
+}
